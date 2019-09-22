@@ -1,5 +1,7 @@
 const idInput = document.getElementById('idInput');
-const styleInput = document.getElementById('styleInput');
+const colorInput = document.getElementById('colorInput');
 
-console.log(idInput);
-console.log(styleInput);
+function setCard() {
+  const card = document.getElementById(idInput.value);
+  card.style.color = colorInput.value;
+}
